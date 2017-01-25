@@ -4,7 +4,7 @@
  
   tasks:
   - name: Hello World!
-    shell: echo "Hi! Ansible is working."
+    copy: content="hello workd\n" dest=/tmp/testfile.txt
 
   - debug: 
       msg: "System {{ inventory_hostname }}"
